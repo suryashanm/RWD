@@ -1,69 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RWD with Bootstrap</title>
 
     <!-- Website icon -->
-    <link rel="shortcut icon" href="/assets/brand/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/assets/brand/favicon.ico"
+      type="image/x-icon"
+    />
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css" />
+
     <!-- Custom CSS to overlay the navbar on top of content -->
-    <link rel="stylesheet" href="/assets/dist/css/nav.css">
-</head>
+    <link rel="stylesheet" href="/assets/dist/css/nav.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#"> <img src="/assets/brand/logo-25x25.png" class="pb-1"> RWD</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-center" href="#">Home <span class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item ps-lg-3">
-                        <a class="nav-link text-center" href="#">About</a>
-                    </li>
-                    <li class="nav-item ps-lg-3">
-                        <a class="nav-link text-center" href="#">Services</a>
-                    </li>
-                    <li class="nav-item ps-lg-3">
-                        <a class="nav-link text-center" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/brand/logo-25x25.png" class="pb-1" /> RWD</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-center" href="#"
+                >Home <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item ps-lg-3">
+              <a class="nav-link text-center" href="#about">About</a>
+            </li>
+            <li class="nav-item ps-lg-3">
+              <a class="nav-link text-center" href="#features">Feauters</a>
+            </li>
+            <li class="nav-item ps-lg-3">
+              <a class="nav-link text-center" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <!-- Content -->
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-md-8 col-sm-12 col-lg-6">
-            <img src="/assets/brand/rwd.jpg" class="d-block ms-md-5 ps-md-5 ms-4 mx-lg-auto img-fluid" alt="responsive" width="700" height="500" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">Responsive Design</h1>
-            <p class="lead">Responsive web design is a fundamental practice in modern web development, ensuring a seamless and user-friendly experience across different devices and screen sizes. In today's mobile-centric digital landscape, it's essential for creating accessible and engaging online experiences.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-            </div>
+    <!-- Home -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-md-8 col-sm-12 col-lg-6">
+          <img
+            src="/assets/brand/home.jpg"
+            class="d-block ms-md-5 ps-md-5 ms-4 mx-lg-auto img-fluid"
+            alt="responsive"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">
+            Responsive web Design
+          </h1>
+          <p class="lead">
+            This website will guide you through the principles of responsive web
+            design that makes web pages render well on a variety of devices and
+            window or screen sizes.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              Primary
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Default
+            </button>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- About -->
+    <div class="container col-xxl-8 px-4 py-5" id="about">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h2 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">
+            About Us
+          </h2>
+          <p class="lead">
+            Welcome to our website! We are dedicated to providing valuable
+            insights and resources on responsive web design.
+          </p>
+          <p>
+            Our mission is to help you create websites that look great on all
+            devices and screen sizes.
+          </p>
+          <p>
+            Whether you're a beginner or an experienced developer, we have the
+            knowledge and tools to assist you in building responsive and
+            user-friendly websites.
+          </p>
+        </div>
+        <div class="col-10 col-md-8 col-sm-12 col-lg-6">
+          <img
+            src="/assets/brand/about.jpg"
+            class="d-block ms-md-5 ps-md-5 ms-4 mx-lg-auto img-fluid"
+            alt="About Us"
+            width="500"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container px-4 py-5" id="features">
+      <h1 class="pb-2 border-bottom">Features</h1>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-center">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="2em" height="2em"><use xlink:href="#people-circle"/></svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="2em" height="2em"><use xlink:href="#people-circle"/></svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="2em" height="2em"><use xlink:href="#toggles2"/></svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap core JS -->
     <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
